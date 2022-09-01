@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Exercise</title>
+</head>
+<body>
+    <h1>Array Exercise</h1>
+    <p>Please look at the console!</p>
+
+    <form>
+        <label for="num_rows">Enter the number of rows: </label>
+        <input type="number" id="num_rows" name="num_rows">
+        <button id="btn_rows">Submit</button>
+    </form>
+    
+    <script>
+        //Simple array manipulation
+        var myArray = [1,2,3,4,5,6,7,8,9,10];
+        var myNewArray = [];
+        for (var i = 0; i < myArray.length; i++) {
+            myNewArray.push(myArray[i] * 2);
+        }
+        console.log(myNewArray);
+
+        //Most frequent number in array
+        var arr = [1,3,3,4,5,4,6,4,2,3,3];
+        var maxcount=0;
+        var ele_max_frequency;
+        var n = arr.length;
+        for(var i=0;i<n;i++)
+        {
+            var count=0;
+            for(var j=1;j<n;j++)
+            {
+                if(arr[i] == arr[j])
+                    count++;
+            }
+        
+            if(count>maxcount)
+            {
+                maxcount=count;
+                ele_max_frequency = arr[i];
+            }
+        }
+        console.log(arr);
+        console.log("This is the element with max frequent  " + ele_max_frequency);
+
+        //Swap case of a string 
+        var str = "Hello! This Is Ayush";
+        var newstr = "";
+        for (var i = 0; i < str.length; i++) {
+            if (str[i] == str[i].toUpperCase()) {
+                newstr += str[i].toLowerCase();
+            } else {
+                newstr += str[i].toUpperCase();
+            }
+        }
+        console.log(newstr);
+        var key = 0;
+        switch (key) {
+            default:console.log("This is default key!");
+                break;
+            case 0: console.log("Zero"); break;
+            case 1: console.log("One"); break;    
+        }
+
+        //Date Objects
+        var d = new Date();
+        console.log(d);
+        switch (d.getDay()) {
+            case 0: console.log("Sunday"); document.write("Sunday"); break;
+            case 1: console.log("Monday"); break;
+            case 2: console.log("Tuesday"); break;
+            case 3: console.log("Wednesday"); break;
+            case 4: console.log("Thursday"); break;
+            case 5: console.log("Friday"); break;
+            case 6: console.log("Saturday"); break;
+        }
+
+        var text="0";
+        switch (text) {
+            case 0: document.write("Zero"); break;
+            case 1: document.write("One"); break;
+            default: document.write("No value found"); break;
+        }
+
+        //Patterns
+        document.getElementById("btn_rows").onclick = function(){
+            var n = document.getElementById("num_rows").value;
+            var pattern = "<br>";
+            for (var i = 0; i < n; i++) {
+                for(var j=0; j < i+1; j++) {
+                    pattern += "*";
+                }
+                pattern += "<br>";
+            }
+            document.write(pattern);
+        }
+    </script>
+</body>
+</html>
