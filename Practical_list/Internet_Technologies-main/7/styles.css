@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+
+:root {
+	--Roboto: "Roboto", sans-serif;
+	--OpenSans: "Open Sans", sans-serif;
+	--Lato: "Lato", sans-serif;
+}
+
+body {
+	background: #fcf4eb !important;
+	font-family: var(--Roboto) !important;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 730px;
+	width: 1000px !important;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.box {
+	padding: 60px;
+	text-align: center;
+}
+
+.leftAlign {
+	text-align: left;
+}

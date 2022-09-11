@@ -1,0 +1,12 @@
+h1 {
+	color: rgb(53, 0, 175);
+	font-family: "Arial";
+}
+
+#result {
+	color: green;
+}
+
+body {
+	text-align: center;
+}

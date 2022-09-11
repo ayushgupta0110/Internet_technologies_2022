@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript Objects</title>
+		<link rel="stylesheet" href="./styles.css" type="text/css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">
+				<div class="row">
+					<h2>Array of Objects and Object of Arrays</h2>
+				</div>
+
+				<div class="row">
+					<div class="offset-1 col-5">
+						<table class="table mt-5" id="table1">
+							<tr>
+								<th>Index</th>
+								<th>Value</th>
+							</tr>
+						</table>
+
+						<div class="row mt-5 leftAlign">
+							<div class="offset-1 col-5"><b>Index:</b></div>
+							<input type="text" class="col-6" id="index" />
+						</div>
+						<div class="row mt-3 leftAlign">
+							<div class="offset-1 col-5"><b>Property Name:</b></div>
+							<input type="text" class="col-6" id="prop1" />
+						</div>
+						<div class="row mt-5">
+							<input type="button" class="offset-3 col-6" value="Submit" onclick="getFromArray()" />
+						</div>
+						<div class="row mt-4">
+							<div id="result1"></div>
+						</div>
+					</div>
+					<div class="offset-1 col-5">
+						<table class="table mt-5" id="table2">
+							<tr>
+								<th>Property</th>
+								<th>Value</th>
+							</tr>
+						</table>
+
+						<div class="row mt-5 leftAlign">
+							<div class="offset-1 col-5"><b>Propery Name:</b></div>
+							<input type="text" class="col-6" id="prop2" />
+						</div>
+						<div class="row mt-3 leftAlign">
+							<div class="offset-1 col-5"><b>Item:</b></div>
+							<input type="text" class="col-6" id="item" />
+						</div>
+						<div class="row mt-5">
+							<input type="button" class="offset-3 col-6" value="Submit" onclick="getFromObject()" />
+						</div>
+						<div class="row mt-4">
+							<div id="result2"></div>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<script src="main.js"></script>
+	</body>
+</html>

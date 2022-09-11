@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="./styles.css" type="text/css" />
+		<title>Decisions</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">
+				<div class="row">
+					<h2>Decisions in JavaScript</h2>
+				</div>
+				<div class="row mt-3 leftAlign">
+					<h4>If-else</h4>
+				</div>
+				<div class="row mt-5 leftAlign">
+					<div class="offset-1 col-3"><b>Enter a number between 0 & 10:</b></div>
+					<input type="text" class="col-7" id="UserInput" />
+				</div>
+				<div class="row mt-5">
+					<input type="button" class="offset-5 col-2" value="Submit" onclick="matchNumbers()" />
+				</div>
+				<div class="row mt-5">
+					<div id="result1"></div>
+				</div>
+
+				<div class="row mt-3 leftAlign">
+					<h4>Switch Case</h4>
+				</div>
+				<div class="row mt-5 leftAlign">
+					<div class="offset-1 col-3"><b>Enter a number between 11 & 15:</b></div>
+					<input type="text" class="col-7" id="SwitchCaseInput" />
+				</div>
+				<div class="row mt-5">
+					<input type="button" class="offset-5 col-2" value="Submit" onclick="switchCase()" />
+				</div>
+				<div class="row mt-5">
+					<div id="result2"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JavaScript -->
+		<script src="main.js"></script>
+	</body>
+</html>

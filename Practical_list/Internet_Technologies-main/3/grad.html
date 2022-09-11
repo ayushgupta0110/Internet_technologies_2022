@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css" type="text/css" />
+		<title>After Graduation</title>
+	</head>
+	<body>
+		<h1>After Graduation</h1>
+
+		<h3>What do you want to do after graduation?</h3>
+
+		<form onsubmit="futureChoice(); return false">
+			<input type="radio" id="HigherEducation" name="choice" value="HigherEducation" />  
+			<label for="HigherEducation">Higher Education</label>
+			<input type="radio" id="Placement" name="choice" value="Placement" />
+			<label for="Placement">Placement</label>
+			<br />
+			<br />
+			<input type="submit" value="Submit" />
+		</form>
+
+		<br />
+		<div id="result"></div>
+
+		<!-- JavaScript -->
+		<script src="main.js"></script>
+	</body>
+</html>
