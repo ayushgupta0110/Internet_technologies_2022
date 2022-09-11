@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <div id="container" style="width:fit-content">
+        <p id="content"></p>
+    </div>
+    <script>
+        onload(
+        
+        setTimeout(function(){
+            document.write("Hello, This is Ayush Gupta");
+        },3000)
+        );
+
+        /* Javascript Objects
+        Objects in Javascript are created using: 
+        1. By Object literal
+        2. By creating an instance of object directly using new keyword
+        3. By using object constructor
+        */
+
+        //Type 1
+        const emp1 = {id:101,name:"Ayush Gupta",salary:"200k"};
+        document.getElementById("content").innerHTML("ID: " + emp1.id);
+        
+        //Type 2
+        e = new (101,"Yash wants to sleep",1000);
+        document.write("Name: " + e.name);
+
+        //Type 3
+        function emp(id,name,salary){
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+            this.changeSalary = changeSalary;
+                function changeSalary(){
+                    this.salary = new salary;
+                }
+        }
+
+        function hotel(name,rooms,booked_room) {
+            this.name= name,
+            this.no_of_rooms=rooms,
+            this.booked_rooms=booked_room,
+            this.deisplay_vacant_rooms = display_vacant_rooms;
+                function display_vacant_rooms(booked_room) {
+                    this.vacant_rooms = no_of_rooms - booked_room;
+                }
+        }
+
+        h1 = hotel('SSCBS',90,88);
+        document.write("Name: " + h1.name);
+        document.write("Booked_rooms: " + h1.booked_rooms);
+        document.write("Vacant Rooms: " + h1.deisplay_vacant_rooms(h1.booked_room));
+        
+    </script>   
+</body>
+</html>
