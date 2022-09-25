@@ -1,0 +1,8 @@
+{
+    "employee" :
+    [
+        {"id":101,"name":"Ayush","dept":20000,"salary":100000,"isAdmin":false},
+        {"id":102,"name":"Akash","dept":10000,"salary":200000,"isAdmin":false},
+        {"id":103,"name":"Ajmera","dept":40000,"salary":200000,"isAdmin":true}
+    ]
+}
