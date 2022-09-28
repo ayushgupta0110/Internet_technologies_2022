@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+
+:root {
+	--Roboto: "Roboto", sans-serif;
+	--OpenSans: "Open Sans", sans-serif;
+	--Lato: "Lato", sans-serif;
+}
+
+body {
+	background: #90EE64 !important;
+	font-family: var(--Roboto) !important;
+}
+
+.container {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	padding: 70px;
+	margin-top: 100px;
+	margin-bottom: 120px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+	text-align: center;
+	width: 70%;
+}
+
+.leftAlign {
+	text-align: left;
+}
+
+.image {
+	border-radius: 10px !important;
+}
