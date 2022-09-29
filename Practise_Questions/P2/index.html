@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Weekend test</title>
+</head>
+<body>
+    
+    <div>Check Console -> Ctrl+Shift+I</div>
+
+    <script>
+        var is_weekend =  function(date1){
+        var dt = new Date(date1);
+        
+            if(dt.getDay() == 6 || dt.getDay() == 0)
+                return "weekend";
+            else{
+                return "weekday";
+            }
+        }
+
+        console.log(is_weekend('Nov 15, 2014'));
+        console.log(is_weekend('Nov 16, 2014'));
+        console.log(is_weekend('Nov 17, 2014'));
+    </script>
+</body>
+</html>
