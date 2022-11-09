@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Ruby",
+        "age": "2",
+        "weight": "27",
+        "breed": "Labrador",
+        "fav": "Playing"
+    },
+    {
+        "name": "Shiba",
+        "age": "6",
+        "weight": "19",
+        "breed": "Shiba Inu",
+        "fav": "Eating"
+    },
+    {
+        "name": "Bruno",
+        "age": "3",
+        "weight": "32",
+        "breed": "Doberman",
+        "fav": "Jumping"
+    },
+    {
+        "name": "Scooby",
+        "age": "4",
+        "weight": "35",
+        "breed": "Great Dane",
+        "fav": "Running"
+    }
+]

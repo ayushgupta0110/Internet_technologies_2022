@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pet Form</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	<body>
+		<div>
+			<form onsubmit="logObjects(event)">
+				<label>Enter your Pet's Name: </label><input type="text" id="name" required />
+				<br />
+				<br />
+				<label>Enter your Pet's Age: </label><input type="number" id="age" required />
+				<br />
+				<br />
+				<label>Enter your Pet's Weight: </label><input type="number" id="weight" required /><span> kg</span>
+				<br />
+				<br />
+				<label>Select your Pet's Breed: </label>
+				<select id="breed">
+					<option>Labrador</option>
+					<option>German Shephard</option>
+					<option>Doberman</option>
+					<option>Bichon Frise</option>
+				</select>
+				<br />
+				<br />
+				<label>Enter what your Pet likes most: </label><input type="text" id="fav" required />
+				<br />
+				<br />
+				<br />
+				<p>
+					<button type="submit">Submit</button>
+				</p>
+			</form>
+		</div>
+
+		<img src="https://www.heartlandpets.net/wp-content/uploads/1970/01/breedbanner-1200x398.jpg" alt="" />
+		<script src="main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</body>
+</html>

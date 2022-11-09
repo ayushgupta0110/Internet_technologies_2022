@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+	overflow-x: hidden;
+	margin: 0px;
+}
+
+div {
+	position: absolute;
+	top: 40%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	z-index: 1;
+}
+
+img {
+	position: absolute;
+	width: 100vw;
+	bottom: 0;
+}
+
+form {
+	background-color: #fcf4eb;
+	border-radius: 14px;
+	padding: 60px;
+	font-family: "Roboto", sans-serif;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+label {
+	font-size: 1.2em;
+}
+
+input {
+	border: none;
+	height: 20px;
+	padding: 4px;
+	padding-left: 8px;
+	font-size: 1.1em;
+	background-color: transparent;
+	border-bottom: 2px solid #460fa0;
+	text-align: center;
+}
+
+input:focus {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #460fa0;
+}
+
+select {
+	border: none;
+	outline: none;
+	height: 30px;
+	font-family: "Roboto", sans-serif;
+	padding-left: 4px;
+	font-size: 1.1em;
+	background-color: transparent;
+	border-bottom: 2px solid #460fa0;
+	text-align: center;
+}
+
+p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	border: none;
+	outline: none;
+	background-color: #330e6e;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 4px;
+	font-size: 1em;
+}
+
+button:hover {
+	background-color: #460fa0;
+	cursor: pointer;
+}
