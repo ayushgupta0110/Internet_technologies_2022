@@ -12,7 +12,7 @@ function generateRandomColor() {
 
 function printTables() {
 	
-	if (current >= 11) {
+	if (current >= 10) {
 		clearInterval(inter);
 	}
 	
