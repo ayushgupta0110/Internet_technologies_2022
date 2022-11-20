@@ -7,16 +7,16 @@ $(document).ready(function () {
 			$.each(data, function (key, obj) {
 				$("#petsTable").append(
 					"<tr><td>" +
-						obj.name +
-						"</td><td>" +
-						obj.age +
-						"</td><td>" +
-						obj.weight +
-						"</td><td>" +
-						obj.breed +
-						"</td> + <td>" +
-						obj.fav +
-						"</td></tr>"
+					obj.name +
+					"</td><td>" +
+					obj.age +
+					"</td><td>" +
+					obj.weight +
+					"</td><td>" +
+					obj.breed +
+					"</td> + <td>" +
+					obj.fav +
+					"</td></tr>"
 				);
 			});
 		},
